@@ -23,5 +23,5 @@ Route::get('/', [Client::class, 'landingPage']);
 Auth::routes(['register' => false]);
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 Route::get('/dashboard', [App\Http\Controllers\DashboardAdmin::class, 'dashboard'])->name('dashboard');
