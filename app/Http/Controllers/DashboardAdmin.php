@@ -23,6 +23,6 @@ class DashboardAdmin extends Controller
      */
     public function dashboard()
     {
-        return view('layout.navbar');
+        return view('Backend.index');
     }
 }

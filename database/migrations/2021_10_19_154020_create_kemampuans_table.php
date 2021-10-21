@@ -15,6 +15,9 @@ class CreateKemampuansTable extends Migration
     {
         Schema::create('kemampuan', function (Blueprint $table) {
             $table->id();
+            $table->string('bahasa_pemrograman');
+            $table->string('icon');
+            $table->string('deskripsi');
             $table->timestamps();
         });
     }

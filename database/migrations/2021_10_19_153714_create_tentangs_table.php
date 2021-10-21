@@ -21,6 +21,7 @@ class CreateTentangsTable extends Migration
             $table->string('telephone');
             $table->string('ttl');
             $table->string('website');
+            $table->string('deskripsi');
             $table->timestamps();
         });
     }

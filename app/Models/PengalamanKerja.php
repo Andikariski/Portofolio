@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PengalamanKerja extends Model
 {
+    protected $table = "pengalaman_kerja";
+    protected $fillable = ['divisi', 'tahun_kerja', 'alamat_kerja', 'deskripsi_pekerjaan', 'tempat_kerja'];
     use HasFactory;
 }

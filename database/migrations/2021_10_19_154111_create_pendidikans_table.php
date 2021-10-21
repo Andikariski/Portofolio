@@ -15,6 +15,10 @@ class CreatePendidikansTable extends Migration
     {
         Schema::create('pendidikan', function (Blueprint $table) {
             $table->id();
+            $table->string('tingkat_pendidikan');
+            $table->string('tahun_pendidikan');
+            $table->string('alamat_pendidikan');
+            $table->string('deskripsi');
             $table->timestamps();
         });
     }

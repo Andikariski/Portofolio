@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kemampuan extends Model
 {
+    protected $table = "kemampuan";
+    protected $fillable = ['bahasa_pemrograman', 'icon', 'deskripsi'];
     use HasFactory;
 }
